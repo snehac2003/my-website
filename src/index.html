@@ -5,9 +5,177 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="stylesheet" href="assets/scripts.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <!-- <h1>Hello World! Welcome to MP1!</h1>
+        <img src="assets/image.jpg"> -->
+        <header class="sticky-navbar">
+            <h2>sneha chaliki</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about" class="nav-link">about</a></li>
+                    <li><a href="#experience" class="nav-link">experience</a></li>
+                    <li><a href="#projects" class="nav-link">projects</a></li>
+                    <li><a href="#interests" class="nav-link">interests</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <div class="about-section">
+                <h1>about</h1>
+                <p>My name is Sneha, and I am a junior studying computer 
+                    science at the University of Illinois Urbana-Champaign! 
+                    I am from Scottsdale, AZ and am pursuing minors in both 
+                    psychology and macroeconomics. </p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h1>experience</h1>
+            <div class="experience-container">
+                <div class="experience-item">
+                    <h3>Svarupa</h3>
+                    <p>Software Engineering Intern</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Abbott Laboratories</h3>
+                    <p>Engineering Intern</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Engineering Open House</h3>
+                    <p>Junior Director of Technology</p>
+                </div>
+                <div class="experience-item">
+                    <h3>OTCR Consulting</h3>
+                    <p>Project Manager</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Human Computer Interaction Department</h3>
+                    <p>Undergraduate Researcher</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Mayo Clinic</h3>
+                    <p>Cardiology Research Intern</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Languages</h3>
+                    <p>Python, C, C++, Java, Javascript, HTML/CSS, Git, Bash, MIPS, Verilog, Swift, VBA, mySQL</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Software</h3>
+                    <p>Docker, Android Studio, React, XCode, OnShape, Figma, Strapi, Smartsheet, VSCode, Qualtrics, Tableau</p>
+                </div>
+                <div class="experience-item">
+                    <h3>General</h3>
+                    <p>Psychology, Consulting, Macroeconomics, Research, Survey Deployment, Painting</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects-wrapper">
+                <h1>projects</h1>
+                <div class="projects-containger">
+                    <div class="project-item">
+                        <h3>Stock Price Forecasting Model</h3>
+                        <p>Python, Scikit-learn</p>
+                        <button onclick="openModal('modal1')">Learn More</button>
+                    </div>
+                    <div class="project-item">
+                        <h3>Climate Change Data Visualization</h3>
+                        <p>HTML/CSS, D3</p>
+                        <button onclick="openModal('modal2')">Learn More</button>
+                    </div>
+                    <div class="project-item">
+                        <h3>Neural Network Optimization</h3>
+                        <p>Python, PyTorch</p>
+                        <button onclick="openModal('modal3')">Learn More</button>
+                    </div>
+                </div>
+
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal1')">&times;</span>
+                        <h2>Algorithmic Stock Price Trend Forecasting Model</h2>
+                        <p>I built an interactive web application in Python using Streamlit to 
+                            forecast stock trends based on historical data. I also utilized 
+                            libraries like Scikit-learn to apply machine learning techniques 
+                            for predicting stock price movements. I fetched real-time stock 
+                            data via Yahoo's Finance API to power predictive models and display 
+                            up-to-date trends.</p>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal2')">&times;</span>
+                        <h2>Interactive Climate Change Data Visualization</h2>
+                        <p>I developed an interactive visualization using real-world 
+                            datasets to illustrate global temperature and humidity trends. 
+                            I leveraged data processing, HTML/CSS, and D3 to create a 
+                            visually compelling climate change visualization.</p>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal3')">&times;</span>
+                        <h2>Neural Network Optimization Using Stochastic Methods</h2>
+                        <p>more detailed description</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h1>interests</h1>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="assets/driving.jpeg" alt="Interest 1">
+                        <p><i class="fas fa-car"></i>  Driving</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/reading.jpeg" alt="Interest 2">
+                        <p><i class="fas fa-book"></i>  Reading</p>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="assets/crochet.jpeg" alt="Interest 3">
+                        <p><i class="fas fa-yarn"></i>  Crochet</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <video width="640" height="360" controls>
+                <source src="assets/video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <footer>
+            <p>Thank you for visiting! <3</p>
+            <div class="social-media-icons">
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </footer>
+        <script src="assets/scripts.js"></script>
     </body>
 </html>
+
+
+
