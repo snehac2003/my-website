@@ -164,6 +164,34 @@ section {
     // text-align: center;
 }
 
+#experience a {
+    text-align: center;
+    // align-items: center;
+    padding-top: 40px;
+    // font-family: monospace;
+    display: block;
+}
+
+#experience button {
+    font-family: monospace;
+    background-color: #ffffff;
+    border-radius: 5px;
+    // border: none;
+    transition: background-color 0.3s ease;
+}
+
+#experience button:hover {
+    background-color: #c0c0c0;
+}
+
+#experience button:active {
+    transform: scale(0.98);
+}
+
+#experience button:focus {
+    outline: none;
+}
+
 .experience-container {
     padding-top: 40px;
     display: flex;
